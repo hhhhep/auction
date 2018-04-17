@@ -1,16 +1,10 @@
-import { Component, ViewEncapsulation } from '@angular/core';
-import { Product, ProductService } from '../../services/product.service';
+import { Component, ViewEncapsulation } from "@angular/core";
+
 @Component({
     selector : 'auction-application',
     templateUrl : 'app/components/application/application.component.html',
     styleUrls : ['app/components/application/application.component.css'],
     encapsulation : ViewEncapsulation.None
 })
-export default class ApplicationComponent {
-    products : Array<Product> = [];
-    
-    constructor (private productService : ProductService) {
-        this.products = productService.getProducts();
-        console.log(this.products[0].title);
-    }
-}
+
+export default class ApplicationComponent {}

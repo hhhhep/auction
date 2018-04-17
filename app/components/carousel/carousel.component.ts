@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
     selector : 'auction-carousel',
     templateUrl : 'app/components/carousel/carousel.component.html'
 })
-export default class carousel {
+export default class CarouselComponent {
 
 }
